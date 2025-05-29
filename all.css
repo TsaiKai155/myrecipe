@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+.my-blog {
+  padding: 15px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #EEDFCC;
+  border-bottom: 2px dashed rgb(201, 178, 154);
+}
+
+.header {
+  background-color: #FAF4E1;
+  border: #6c2b02 double 10px;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column; /* 讓 logo區+介紹文 跟 nav 區塊上下排列 */
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 1.5rem;
+  max-height: 280px;
+}
+
+#big {
+  background-color: #f3d18d;
+  color: rgb(96, 50, 12);
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: underline;
+}
+
+.logo-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* 小螢幕會自動換行 */
+}
+
+.coffee-text {
+  color: rgb(96, 50, 12);
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.logo1 {
+  width: 480px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 110px;
+  background-color: rgb(201, 178, 154);
+  gap: 40px;
+  max-height: 70px;
+}
+.box img {
+  padding-top: 20px;
+  width: 300px;
+  height: 100%;
+  margin-right: 20px;
+}
+.box ul {
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.box ul li {
+  position: relative;
+}
+.box ul li a.cute {
+  text-decoration: none;
+  color: rgb(96, 50, 12);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: rgb(201, 178, 154);
+  transition: background-color 0.3s ease;
+}
+.box ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff8dc;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.box ul li li {
+  padding: 4px 15px;
+}
+.box ul li li a {
+  font-size: 15px;
+  color: rgb(96, 50, 12);
+  background: none;
+}
+.box ul li li a:hover {
+  background-color: #f5e2a5;
+  border-radius: 4px;
+}
+.box ul.open .dropdown-menu {
+  display: block;
+}
+
+.imagelist {
+  display: flex; /* 讓 li 橫向排列 */
+  list-style: none; /* 拿掉點點 */
+  padding: 0;
+  margin: 0;
+  gap: 10px; /* li 間距 */
+  margin-top: 30px;
+}
+
+.foodwall {
+  width: 270px;
+  height: 250px;
+  gap: 30px;
+  padding-right: 20px;
+  padding-top: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.topic h1 {
+  background-color: #FAF4E1;
+  border-top: double 5px rgb(201, 178, 154);
+  border-bottom: double 5px rgb(201, 178, 154);
+  border-left: none;
+  text-align: center;
+  background-color: #FAF4E1;
+  color: rgb(96, 50, 12);
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3欄 */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.dish-1 {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: double 10px rgb(96, 50, 12);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dish-1.active {
+  filter: brightness(1.3);
+  border-color: #ffb347;
+}
+
+.wish-section {
+  background-color: #fff9f4;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 800px;
+  margin: auto;
+  font-family: "Hiragino Maru Gothic Pro", "Noto Sans JP", sans-serif;
+}
+.wish-section h2 {
+  text-align: center;
+  color: rgb(96, 50, 12);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+.wish-section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.wish-section form input, .wish-section form select {
+  padding: 0.6rem;
+  border: 1px solid #d6b7aa;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  flex: 1 1 250px;
+}
+.wish-section form button {
+  background-color: #eec9b7;
+  color: #5e2d21;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.wish-section form button:hover {
+  background-color: #dba89c;
+}
+.wish-section .wish-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.wish-section .wish {
+  background: #fff7f0;
+  border: 1px dashed #d4a69c;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  color: #54342a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+.wish-section .wish:hover {
+  transform: scale(1.02);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+form input, form select {
+  width: 80%;
+  padding: 0.6rem;
+  border: 1px solid #d6cfc2;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+form button {
+  background-color: #d39263;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button:hover {
+  background-color: #b5774f;
+}
+
+.wish-wall {
+  margin-top: 2rem;
+  text-align: left;
+  font-size: 0.95rem;
+  background: #fff;
+  border: 1px dashed #c2a38a;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.wish-wall div.wish {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0e6dd;
+}
+.wish-wall div.wish:last-child {
+  border-bottom: none;
+}
+
+.footer-style {
+  display: flex;
+  background-color: rgb(201, 178, 154);
+  max-height: 100px;
+  font-size: 13px;
+  padding-left: 450px;
+}
+
+.footer-style img {
+  display: flex;
+  width: 22%;
+}
+
+.footer-style p {
+  padding-right: 200px;
+}/*# sourceMappingURL=all.css.map */
