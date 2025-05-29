@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+.my-blog {
+  padding: 15px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #EEDFCC;
+  border-bottom: 2px dashed rgb(201, 178, 154);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 10px 110px;
+  background-color: rgb(201, 178, 154);
+  gap: 40px;
+  max-height: 70px;
+}
+.box img {
+  padding-top: 20px;
+  width: 300px;
+  height: 100%;
+  margin-right: 20px;
+}
+.box ul {
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.box ul li {
+  position: relative;
+}
+.box ul li a.cute {
+  text-decoration: none;
+  color: rgb(96, 50, 12);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: rgb(201, 178, 154);
+  transition: background-color 0.3s ease;
+}
+.box ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff8dc;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+.box ul li li {
+  padding: 4px 15px;
+}
+.box ul li li a {
+  font-size: 15px;
+  color: rgb(96, 50, 12);
+  background: none;
+}
+.box ul li li a:hover {
+  background-color: #f5e2a5;
+  border-radius: 4px;
+}
+.box ul.open .dropdown-menu {
+  display: block;
+}
+
+h1 {
+  color: rgb(96, 50, 12);
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.foodbox {
+  margin: 0 auto;
+  display: grid;
+  place-items: center; /* 同時水平＋垂直置中 */
+}
+
+.container h1 {
+  border-radius: 15px;
+  padding: 10px;
+  border: double black;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.page {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 300px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: #fff;
+  background-image: linear-gradient(#f5f5f0 1.1rem, #ccc 1.2rem);
+  background-size: 100% 1.2rem;
+  line-height: 1.2rem;
+  padding: 1.4rem 0.5rem 0.3rem 4.5rem;
+  margin-right: 50px;
+}
+
+.page::before,
+.page::after {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.page::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.page::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+
+.page:hover::before,
+.page:hover::after {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.margin {
+  position: absolute;
+  border-left: 1px solid #d88;
+  height: 100%;
+  left: 3.3rem;
+  top: 0;
+}
+
+.page p {
+  margin: 0;
+  text-indent: 1rem;
+  padding-bottom: 1.2rem;
+  color: black;
+  line-height: 22px;
+}
+
+.foodbox img {
+  border: rgb(96, 50, 12) double 10px;
+}
+
+.introduction {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.steps {
+  width: 500px;
+  border-radius: 2px;
+  background: #ffe3b3;
+  box-shadow: 9px 9px 10px #bda884, -9px -9px 10px #ffffe2;
+}
+
+.steps h2 {
+  font-size: 20px;
+  text-align: center; /* 文字置中 */
+  border-bottom: rgb(16, 9, 9) dotted;
+}
+
+.steps p {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.footer-style {
+  display: flex;
+  background-color: rgb(201, 178, 154);
+  max-height: 100px;
+  font-size: 13px;
+  padding-left: 450px;
+}
+
+.footer-style img {
+  display: flex;
+  width: 22%;
+}
+
+.footer-style p {
+  padding-right: 200px;
+}/*# sourceMappingURL=beef-dish.css.map */
